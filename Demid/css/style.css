@@ -151,7 +151,17 @@ body.lock {
 }
 
 .content {
+  visibility: visible;
+  opacity: 0;
+  -webkit-transition: opacity 1s cubic-bezier(0.694, 0, 0.335, 1) 0s;
+  -o-transition: opacity 1s cubic-bezier(0.694, 0, 0.335, 1) 0s;
+  transition: opacity 1s cubic-bezier(0.694, 0, 0.335, 1) 0s;
   padding: 0 100px 0 200px;
+}
+
+.content__scroll {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*HEADER===========================================================================================*/
