@@ -219,7 +219,8 @@ body.lock {
 }
 
 .menu__list_active a {
-  color: #010101;
+  background-color: #253d4a;
+  color: #fff;
 }
 
 .menu__list li {
@@ -479,6 +480,10 @@ body.lock {
   font-size: 15px;
   line-height: 18px;
   text-align: left;
+}
+
+.item-featured__link {
+  padding: 4px 4px 4px 0 !important;
 }
 
 /*PROJECTS===========================================================================================*/
