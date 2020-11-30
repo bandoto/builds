@@ -3537,8 +3537,8 @@ textarea {
 }
 
 .nav-link:hover {
-  color: #CB0000;
-  border-bottom: 1px solid;
+  position: relative;
+  bottom: 1px;
 }
 
 .nav-link__active {
