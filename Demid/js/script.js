@@ -20,11 +20,6 @@ $('a[href*="#portfolio"],a[href*="#skills"],a[href*="#featured"],a[href*="#foote
     return false;
 });
 
-$(document).ready(function() {
-    $('.header__burger').click(function(event) {
-        $('.header__burger,.menu__body').toggleClass('active');
-    });
-});
 
 $(document).ready(function() {
     $('.header__burger').click(function(event) {
