@@ -1,0 +1,51 @@
+@import "blocks/_vars.scss";
+@import "blocks/header.scss";
+@import "blocks/normalize.scss";
+@import "blocks/button.scss";
+@import "blocks/started.scss";
+@import "blocks/question.scss";
+@import "blocks/ads.scss";
+@import "blocks/features.scss";
+
+
+
+/*FONTS========================*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+body,
+input,
+button,
+textarea {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: $b;
+}
+
+
+
+/*WRAPPER===========================================================================================*/
+.link{
+
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*CONTAINER===========================================================================================*/
+
+.container{
+	max-width: 1275px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}

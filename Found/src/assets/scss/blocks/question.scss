@@ -1,0 +1,39 @@
+.question {
+	padding: 80px 0;
+
+	background-color: #F4F5F7;
+
+	@media (max-width: 767px) {
+		padding: 30px 0;
+	}
+	// .question__body
+	&__body {
+		display: flex;
+
+		margin: 0 -15px;
+
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	// .question__card
+	&__card {
+		padding: 0 15px;
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+		}
+	}
+	// .question__title
+	&__title {
+		margin-bottom: 15px;
+
+		font-size: 22px;
+		line-height: 32px;
+		font-weight: 700;
+	}
+	// .question__subtitle
+	&__subtitle {
+		font-size: 22px;
+		line-height: 32px;
+	}
+}
