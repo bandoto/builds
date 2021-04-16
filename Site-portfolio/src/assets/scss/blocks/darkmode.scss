@@ -1,0 +1,111 @@
+input:checked,
+input:checked + * {
+  background-color: $bg;
+  color: #fff;
+  .after, .contact__after {
+    background-color: $bg;
+    color: $after;
+    z-index: 2;
+  }
+  .page:after, .page:before {
+    border: 2px solid $after;
+    z-index: 1;
+  }
+  .card-work__skills span {
+    background-color: darken($bg, 5%);
+    color: $gray;
+  }
+  .header {
+    background-color: $bg;
+  }
+  .menu__link, .card-work__title{
+    color: #fff;
+  }
+  .menu__body {
+    background-color: $bg;
+  }
+  .contact__info a, .table__lvl {
+    color: $lvl-dark;
+  }
+  .header__logo svg {
+    fill: #fff;
+  }
+  .menu__icon span, .menu__icon:after, .menu__icon:before {
+    background-color: #fff;
+  }
+
+  .menu__icon._active .menu__icon span,
+  .menu__icon._active .menu__icon:before,
+  .menu__icon._active .menu__icon:after,
+  {
+    background-color: $header;
+  }
+
+  .menu__body._active {
+    background-color: $bg;
+  }
+
+  .menu__body:after{
+    background-color: $bg;
+    background-image: url("../images/logo-dark.svg");
+  }
+
+  .link:after {
+    background-color: #fff;
+  }
+  .link--contact:after {
+    background: $lvl;
+  }
+  .contact__action svg {
+    fill: #fff;
+  }
+}
+
+.toggle {
+  position: fixed;
+  z-index: 1000;
+  top: 23px;
+  right: 15px;
+  @media (max-width: 900px) {
+     right: 60px;
+     top: 16px;
+  }
+
+}
+
+input[type="checkbox"] {
+
+  --size: 2rem;
+  
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  
+  width: var(--size);
+  height: var(--size);
+  box-shadow: inset calc(var(--size) * 0.3) calc(var(--size) * -0.25) 0;
+  border-radius: 999px;
+  color: hsl(240, 0, 20%);
+  
+  transition: all 500ms;
+}
+
+input[type="checkbox"]:checked {
+  --ray-size: calc(var(--size) * -0.42);
+  --offset-orthogonal: calc(var(--size) * 0.65);
+  --offset-diagonal: calc(var(--size) * 0.45);
+
+  transform: scale(0.75);
+  color: hsl(40, 100%, 100%);
+  box-shadow: 
+    inset 0 0 0 var(--size),
+    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+    var(--offset-orthogonal) 0 0 var(--ray-size),
+    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+    0 var(--offset-orthogonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+  ;
+}

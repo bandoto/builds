@@ -1,0 +1,81 @@
+.page {
+	position: relative;
+
+	max-width: 1270px;
+	margin: 0 auto;	
+
+	padding-top: 70px;
+
+	@media (max-width: 767px) {
+	   padding-top: 55px;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+
+		top: 40px;	
+
+		border-left: 2px solid $gray;
+
+		background-color: #000;
+		@media (max-width: 900px) {
+			top: 50px;
+		}
+		@media (max-width: 500px) {
+			left: 30px;
+		}
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+
+		border-bottom: 2px solid $gray;
+
+		width: 80px;
+	}
+
+	&:after, &:before {
+		left: 50px;
+		bottom: 185px;
+		z-index: -1;
+		@media (min-width: 1401px) {
+			bottom: 163px;
+		}
+
+		@media (max-width: 797px) {
+			bottom: 205px;
+		}
+		@media (max-width: 767px) {
+			bottom: 200px;
+		}
+		@media (max-width: 691px) {
+			bottom: 220px;
+		}
+		@media (max-width: 546px) {
+			bottom: 240px;
+		}
+		@media (max-width: 500px) {
+			left: 30px;
+			bottom: 223px;
+		}
+		@media (max-width: 371px) {
+			bottom: 243px;
+		}
+		@media (max-width: 354px) {
+			bottom: 243px;
+		}
+	}
+
+	&__section {
+		padding: 50px 0;
+		@media (max-width: 767px) {
+			padding: 30px 0;
+
+		}
+		@media (max-width: 500px) {
+			padding: 15px 0;
+
+		}
+	}
+}

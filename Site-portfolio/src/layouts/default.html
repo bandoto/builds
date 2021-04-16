@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body>
+	<input class="toggle" type="checkbox" />
+	<div class="wrapper">
+	    <section class="video">
+	    	<div class="video__bg">
+	    		<video autoplay muted loop id="myVideo">
+	    	       <source src="assets/video/bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+	    	    </video>
+	    	</div>
+	    </section>
+	    {{> header }}
+	    <main class="page">
+	    	
+	    	{{> body }}
+	    	
+	    </main>
+
+	    {{> footer }}
+
+	</div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

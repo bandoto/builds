@@ -1,0 +1,181 @@
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    &._active {
+        position: fixed;
+    }
+
+    /* .header__body */
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 0;
+
+        position: relative;
+
+    }
+    &__container {
+        padding: 0 15px 0 15px !important;
+        @media (max-width: 1150px) {
+           padding: 0 100px 0 15px !important;
+        }
+        @media (max-width: 900px) {
+           padding: 0 15px 0 15px !important;
+        }
+    }
+    /* .header__image */
+    &__image {
+        display: flex;
+        align-items: center;
+    }
+    /* .header__logo */
+    &__logo {
+        margin-right: 20px;
+        position: relative;
+        top: 5px;
+            svg {
+            fill: #000;
+            width: 50px;
+            height: auto;
+            @media (max-width: 900px) {
+               width: 35px; 
+            }
+        }
+
+    }
+    /* .header__name */
+    &__name {
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    /* .header__menu */
+    &__menu {
+    }
+}
+.menu {
+    /* .menu__icon */
+    &__icon {
+        display: none;
+        @media (max-width: 900px) {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 18px;
+            z-index: 999; 
+        }
+        &._active {
+            position: fixed;
+            top: 20px;
+            right: 15px;
+
+        }
+        &:before,
+        &:after,
+        span {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all .3s ease 0s;
+            background-color: #000;
+        }
+
+        &:before,
+        &:after{
+            content: "";
+        }
+        &:before{
+            top: 0;
+        }
+        &:after{
+            bottom: 0;
+        }
+        span{
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+        }
+        &._active:before{
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+        &._active:after{
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+        &._active span{
+            transform: scale(0) translate(0px, -50%);
+        }
+    }
+    /* .menu__body */
+    &__body {
+        @media (max-width: 900px){
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            padding: 80px 10px 10px 0;
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+        &:after{
+            content: "";
+            left: -100%;
+            transition: left .3s ease 0s;
+        }
+        &._active{
+            left: 0;
+            
+            &:after{
+                content: "";
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 70px;
+                background-color: #fff;
+                background-image: url("../images/logo.svg");
+                background-repeat: no-repeat;
+                background-size: 35px auto;
+                background-position: 20px 15px;
+                top: 0;
+                left: 0;
+                @media (max-width: 900px) {
+                   height: 60px; 
+                }
+            }
+        }   
+        }
+    }
+    /* .menu__list */
+    &__list {
+        display: flex;
+
+        @media (max-width: 900px) {
+            display: block;
+        }
+        li{
+            margin-left: 20px;
+            @media (max-width: 900px) {
+               margin-bottom: 15px;
+
+               font-size: 1.7em;
+               line-height: 1.3em;
+            }
+        }
+    }
+    /* .menu__link */
+    &__link {
+        color: #000;
+        display: inline-block;
+    }
+    /* .menu__link_active */
+    &__link_active {
+    }
+}
+

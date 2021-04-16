@@ -1,0 +1,81 @@
+.skills {
+	/* .skills__body */
+	&__body {
+		position: relative;
+	}
+	/* .skills__card */
+	&__card {
+	}
+}
+.card-skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	/* .card-skills__blk */
+	&__blk {
+		padding: 30px;
+		margin: 0 0 20px 0;
+
+		border: 1px solid $gray;
+
+		border-radius: 10px;
+
+		@media (max-width: 500px) {
+			padding: 10px;
+		}
+	}
+
+	&__col {
+		width: calc(50% - 10px);
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+	/* .card-skills__title */
+	&__title {
+		margin-bottom: 25px;
+		color: lighten(#000, 65%);
+
+		font-weight: 700;
+	}
+	/* .card-skills__body */
+	&__body {
+		
+	}
+
+.table {
+	width: 100%;
+	text-align: right;
+
+
+	&__skill {
+		padding-right: 15px;
+		width: 100%;
+
+		@media (max-width: 500px) {
+			padding-right: 3px;
+		}
+	}
+
+	&__lvl {
+		width: 100%;
+		padding-left: 15px;
+
+		text-align: left;
+
+		min-width: 124px;
+
+		overflow: hidden;
+
+		color: #366796;
+		font-weight: 700;	
+
+		@media (max-width: 500px) {
+			padding-left: 3px;
+		}
+	}
+}
+
+}
