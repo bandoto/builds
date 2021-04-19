@@ -506,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 797px) {
     .page:after, .page:before {
-        bottom: 205px;
+        bottom: 187px;
     }
 }
 
@@ -516,32 +516,46 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 655px) {
     .page:after, .page:before {
-        bottom: 220px;
+        bottom: 224px;
     }
 }
 
 @media (max-width: 546px) {
     .page:after, .page:before {
-        bottom: 240px;
+        bottom: 223px;
+    }
+}
+
+@media (max-width: 517px) {
+    .page:after, .page:before {
+        left: 30px;
+        bottom: 245px;
     }
 }
 
 @media (max-width: 500px) {
     .page:after, .page:before {
         left: 30px;
-        bottom: 223px;
+        bottom: 203px;
+    }
+}
+
+@media (max-width: 477px) {
+    .page:after, .page:before {
+        left: 30px;
+        bottom: 221px;
     }
 }
 
 @media (max-width: 371px) {
     .page:after, .page:before {
-        bottom: 243px;
+        bottom: 223px;
     }
 }
 
-@media (max-width: 354px) {
+@media (max-width: 353px) {
     .page:after, .page:before {
         bottom: 243px;
     }
