@@ -115,7 +115,7 @@
     $(window).on('load resize', function() {
       if ($(window).width() < 1000) {
         $('.slider:not(.slick-initialized)').slick({
-          centerMode: false,
+          centerMode: true,
           dots: false,
           arrows: false,
           infinite: true,
